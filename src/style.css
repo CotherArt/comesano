@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Mochiy Pop P One:700|Mochiy Pop P One:400');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .card {
+    @apply 
+    shadow-md 
+    bg-primary 
+    rounded-md p-4;
+  }
+  .btn-primary {
+    @apply 
+    bg-primary 
+    hover:bg-accent 
+    focus:bg-accent 
+    text-secondary 
+    border-primary 
+    py-2 
+    px-4 
+    border 
+    rounded-full
+    focus:outline-none
+    focus:shadow-md;
+  }
+  .btn-secondary {
+    @apply 
+    bg-transparent 
+    hover:bg-accent 
+    focus:bg-accent 
+    text-text
+    focus:text-secondary
+    hover:text-secondary
+    border-primary 
+    focus:border-primary 
+    py-2 
+    px-4 
+    border 
+    hover:border-transparent 
+    rounded-full
+    focus:outline-none
+    focus:shadow-md;
+  }
+  .btn-tercery {
+    @apply 
+    bg-transparent 
+    hover:bg-accent 
+    focus:bg-accent 
+    text-text 
+    focus:text-secondary
+    hover:text-secondary
+    py-2 
+    px-4 
+    border-primary  
+    focus:outline-none
+    rounded-full
+    focus:shadow-md;
+  }
+  .link {
+    @apply 
+    bg-transparent 
+    text-primary 
+    hover:text-secondary
+    focus:text-white 
+    hover:cursor-pointer
+    border-primary  
+    focus:outline-none;
+  }
+  .input-text {
+    @apply 
+    shadow 
+    appearance-none 
+    border-2
+    rounded
+    w-full 
+    py-2 
+    px-3 
+    text-secondary
+    leading-tight 
+    focus:outline-none
+    focus:border-primary 
+    focus:shadow-md;
+  }
+
+  /* ... */
+}

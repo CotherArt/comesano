@@ -2,7 +2,7 @@
   <div class="flex justify-between items-center px-4 py-4 md:px-8 border-b-2 bg-background border-secondary">
     <!-- <img src="@/assets/icons/comesano_wide.png" @click="$router.push('/')" class="cursor-pointer h-16 hidden md:block"> -->
     <div class="flex cursor-pointer gap-2" @click="$router.push('/')">
-      <img src="assets/imgs/icons/comesano_64.png" />
+      <img src="/assets/imgs/icons/comesano_64.png" />
       <p id="logo" class="font-bold text-3xl">COMESANO</p>
     </div>
     <div id="buttons" class="flex gap-2 h-10">

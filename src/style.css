@@ -4,12 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --text: #000000;
+    --background: #ffffff;
+    --primary: #cd9ce7;
+    --secondary: #eedff6;
+    --accent: #983ecc;
+  }
+  .dark {
+    --text: #ffffff;
+    --background: #000000;
+    --primary: #491864;
+    --secondary: #180920;
+    --accent: #8d33c1;
+  }
+}
 
 @layer components {
   .card {
     @apply 
     shadow-md 
-    bg-primary 
+    bg-secondary 
     rounded-md p-4;
   }
   .btn-primary {
@@ -17,12 +33,12 @@
     bg-primary 
     hover:bg-accent 
     focus:bg-accent 
-    text-secondary 
+    text-text 
     border-primary 
     py-2 
     px-4 
     border 
-    rounded-full
+    rounded-xl
     focus:outline-none
     focus:shadow-md;
   }
@@ -40,7 +56,7 @@
     px-4 
     border 
     hover:border-transparent 
-    rounded-full
+    rounded-xl
     focus:outline-none
     focus:shadow-md;
   }
@@ -56,7 +72,7 @@
     px-4 
     border-primary  
     focus:outline-none
-    rounded-full
+    rounded-xl
     focus:shadow-md;
   }
   .link {
@@ -64,7 +80,7 @@
     bg-transparent 
     text-primary 
     hover:text-secondary
-    focus:text-white 
+    focus:text-secondary 
     hover:cursor-pointer
     border-primary  
     focus:outline-none;
@@ -78,7 +94,7 @@
     w-full 
     py-2 
     px-3 
-    text-secondary
+    text-gray-700
     leading-tight 
     focus:outline-none
     focus:border-primary 

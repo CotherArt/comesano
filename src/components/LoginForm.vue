@@ -1,14 +1,16 @@
 <template>
   <form class="card flex flex-col gap-4" @submit="onSubmit">
     <div>
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+      <p class="text-text text-center bg-primary relative top-10">Iniciar Sesión</p>
+    </div>
+    <div>
+      <label class="block text-text text-sm mb-2" for="username">
         Usuario
       </label>
-      {{ user }}
       <input name="user" class="input-text" type="text" placeholder="usuario" required v-model="user">
     </div>
     <div>
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+      <label class="block text-text text-sm mb-2" for="password">
         Contraseña
       </label>
       <input name="password" class="input-text" type="password" placeholder="******************" required v-model="password">

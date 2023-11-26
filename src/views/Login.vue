@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full flex justify-center mt-10">
+    <div class="w-full flex justify-center">
         <login />
     </div>
 </template>
 
 <script setup>
-import login from '../../components/auth/login.vue';
+import login from '../components/LoginForm.vue';
 </script>
 
 <style lang="scss" scoped>

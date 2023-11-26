@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        'text': '#f2fdf4',
-        'background': '#041b08',
-        'primary': '#148527',
-        'secondary': '#051f09',
-        'accent': '#1fd13d',
-       },       
+        'text': 'var(--text)',
+        'background': 'var(--background)',
+        'primary': 'var(--primary)',
+        'secondary': 'var(--secondary)',
+        'accent': 'var(--accent)',
+      },
     },
     fontSize: {
       sm: '0.750rem',
